@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: student-collection2-coll-f51a81ee16f548378ba3f61ed5b32d84-srv
+spec:
+  selector:
+    app: student-collection2-coll-f51a81ee16f548378ba3f61ed5b32d84
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9048
+  type: ClusterIP
